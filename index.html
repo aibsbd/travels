@@ -1,0 +1,1061 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Seerat Travels — Sacred & Executive Journeys | Dhaka to Saudi Arabia</title>
+  <meta name="description" content="Seerat Travels under Seerat Academy Foundation. Curated Hajj, Umrah, and Dhaka to Makkah, Madinah, Jeddah & Riyadh flight + itinerary packages." />
+  
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            emeraldDeep: '#022C22',
+            emeraldRich: '#064E3B',
+            goldAccent: '#D4AF37',
+            goldLight: '#FDE68A',
+            alabaster: '#FAF8F5',
+          },
+          fontFamily: {
+            display: ['Cinzel', 'serif'],
+            sans: ['Plus Jakarta Sans', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* Subtle Islamic Geometric Background Pattern */
+    .islamic-pattern {
+      background-color: #022C22;
+      background-image: radial-gradient(rgba(212, 175, 55, 0.12) 1px, transparent 1px),
+                        radial-gradient(rgba(212, 175, 55, 0.08) 1px, #022C22 1px);
+      background-size: 40px 40px;
+      background-position: 0 0, 20px 20px;
+    }
+
+    .gold-gradient-text {
+      background: linear-gradient(135deg, #FDE68A 0%, #D4AF37 50%, #B45309 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .glass-card {
+      background: rgba(255, 255, 255, 0.04);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(212, 175, 55, 0.22);
+    }
+
+    /* Typing animation dots */
+    .typing-dot {
+      animation: typingBounce 1.4s infinite ease-in-out both;
+    }
+    .typing-dot:nth-child(1) { animation-delay: -0.32s; }
+    .typing-dot:nth-child(2) { animation-delay: -0.16s; }
+    @keyframes typingBounce {
+      0%, 80%, 100% { transform: scale(0); opacity: 0.4; }
+      40% { transform: scale(1); opacity: 1; }
+    }
+
+    /* Custom Scrollbar for Chat */
+    .chat-scroll::-webkit-scrollbar { width: 5px; }
+    .chat-scroll::-webkit-scrollbar-track { background: transparent; }
+    .chat-scroll::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 10px; }
+  </style>
+</head>
+<body class="bg-alabaster text-slate-800 font-sans antialiased selection:bg-goldAccent selection:text-emeraldDeep">
+
+  <!-- TOP ANNOUNCEMENT BAR -->
+  <div class="bg-emeraldDeep border-b border-goldAccent/25 text-alabaster text-xs sm:text-sm py-2.5 px-4 text-center">
+    <span class="inline-flex items-center gap-2">
+      <span class="w-2 h-2 rounded-full bg-amber-400 animate-ping"></span>
+      <span><strong class="text-goldLight">Early Access Launch:</strong> Priority Waitlist Open for Dhaka ⇄ Saudi Arabia Umrah, Hajj & Riyadh Bundles.</span>
+      <a href="#waitlist" class="underline text-goldLight font-semibold hover:text-white ml-1">Reserve Spot →</a>
+    </span>
+  </div>
+
+  <!-- NAVIGATION -->
+  <header class="sticky top-0 z-40 bg-emeraldDeep/95 backdrop-blur-md border-b border-white/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      <!-- Brand -->
+      <a href="#" class="flex items-center gap-3 group">
+        <div class="w-11 h-11 rounded-xl bg-gradient-to-br from-goldLight via-goldAccent to-amber-700 flex items-center justify-center shadow-lg shadow-amber-900/30">
+          <i data-lucide="compass" class="w-6 h-6 text-emeraldDeep"></i>
+        </div>
+        <div>
+          <span class="font-display text-xl font-bold tracking-wider text-white block leading-none">SEERAT TRAVELS</span>
+          <span class="text-[11px] uppercase tracking-widest text-goldLight/80">By Seerat Academy Foundation</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-200">
+        <a href="#corridors" class="hover:text-goldLight transition">Destinations</a>
+        <a href="#packages" class="hover:text-goldLight transition">Packages & Flights</a>
+        <a href="#features" class="hover:text-goldLight transition">Why Seerat</a>
+        <a href="http://seeratfoundation.com" target="_blank" rel="noopener noreferrer" class="hover:text-goldLight transition flex items-center gap-1">
+          Foundation <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+        </a>
+      </nav>
+
+      <!-- CTA Buttons -->
+      <div class="flex items-center gap-3">
+        <button onclick="openChatWithPrompt('I want to inquire about an upcoming Umrah or flight package from Dhaka.')" class="hidden sm:inline-flex items-center gap-2 px-4 py-2.5 rounded-lg border border-goldAccent/50 text-goldLight text-sm font-semibold hover:bg-goldAccent/10 transition">
+          <i data-lucide="message-square" class="w-4 h-4"></i>
+          AI Travel Desk
+        </button>
+        <a href="#waitlist" class="px-5 py-2.5 rounded-lg bg-gradient-to-r from-goldLight to-goldAccent text-emeraldDeep text-sm font-bold shadow-lg shadow-amber-900/20 hover:brightness-105 transition">
+          Join Waitlist
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="islamic-pattern relative overflow-hidden pt-16 pb-24 lg:pt-24 lg:pb-32 text-white">
+    <!-- Decorative Glows -->
+    <div class="absolute top-0 right-0 w-[500px] h-[500px] bg-goldAccent/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/3 pointer-events-none"></div>
+    <div class="absolute bottom-0 left-0 w-[400px] h-[400px] bg-emerald-500/10 rounded-full blur-3xl translate-y-1/2 -translate-x-1/3 pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="grid lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- Left Copy -->
+        <div class="lg:col-span-7 space-y-7">
+          <div class="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-white/5 border border-goldAccent/30 text-goldLight text-xs font-semibold tracking-wide uppercase">
+            <i data-lucide="sparkles" class="w-3.5 h-3.5"></i>
+            The Next-Gen Dhaka ⇄ Saudi Arabia Travel Platform
+          </div>
+
+          <h1 class="font-display text-4xl sm:text-5xl lg:text-6xl font-bold leading-[1.12] tracking-tight">
+            From <span class="gold-gradient-text">Dhaka</span> to the Sacred Lands & Beyond.
+          </h1>
+
+          <p class="text-slate-300 text-lg sm:text-xl leading-relaxed max-w-2xl">
+            Seamlessly book verified <strong class="text-white">Umrah & Hajj packages</strong>, custom multi-city bundles, and door-to-door itineraries between <strong class="text-goldLight">Dhaka, Makkah, Madinah, Jeddah, and Riyadh</strong>—complete with live flight details, Haram-view hotels, and visa concierge.
+          </p>
+
+          <!-- Action Buttons -->
+          <div class="flex flex-wrap gap-4 pt-2">
+            <a href="#packages" class="inline-flex items-center gap-2.5 px-7 py-4 rounded-xl bg-gradient-to-r from-goldLight via-goldAccent to-amber-500 text-emeraldDeep font-bold text-base shadow-xl shadow-amber-950/40 hover:scale-[1.02] transition">
+              Explore Preview Bundles
+              <i data-lucide="arrow-right" class="w-5 h-5"></i>
+            </a>
+            <button onclick="toggleChat(true)" class="inline-flex items-center gap-2.5 px-7 py-4 rounded-xl glass-card text-white font-semibold text-base hover:bg-white/10 transition">
+              <i data-lucide="bot" class="w-5 h-5 text-goldLight"></i>
+              Plan With Concierge
+            </button>
+          </div>
+
+          <!-- Trust Metrics -->
+          <div class="grid grid-cols-3 gap-6 pt-6 border-t border-white/10 max-w-xl">
+            <div>
+              <div class="font-display text-2xl sm:text-3xl font-bold text-goldLight">5 Hubs</div>
+              <div class="text-xs sm:text-sm text-slate-400">DAC · JED · MED · MAK · RUH</div>
+            </div>
+            <div>
+              <div class="font-display text-2xl sm:text-3xl font-bold text-goldLight">100%</div>
+              <div class="text-xs sm:text-sm text-slate-400">Transparent Flight & Hotel Specs</div>
+            </div>
+            <div>
+              <div class="font-display text-2xl sm:text-3xl font-bold text-goldLight">24/7</div>
+              <div class="text-xs sm:text-sm text-slate-400">Live Smart Travel Assistant</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Interactive Route Card -->
+        <div class="lg:col-span-5">
+          <div class="glass-card rounded-3xl p-6 sm:p-8 shadow-2xl relative">
+            <div class="flex items-center justify-between mb-6">
+              <div>
+                <span class="text-xs uppercase tracking-widest text-goldLight font-semibold">Live Sample Itinerary</span>
+                <h3 class="font-display text-xl font-bold text-white mt-0.5">Dhaka ⇄ Makkah & Madinah</h3>
+              </div>
+              <span class="px-3 py-1 rounded-full bg-emerald-500/20 border border-emerald-400/30 text-emerald-300 text-xs font-semibold">
+                App Preview
+              </span>
+            </div>
+
+            <!-- Flight Leg Card -->
+            <div class="bg-emeraldDeep/80 border border-white/10 rounded-2xl p-4 mb-4">
+              <div class="flex items-center justify-between text-xs text-slate-400 mb-3">
+                <span class="flex items-center gap-1.5 text-goldLight font-medium">
+                  <i data-lucide="plane-takeoff" class="w-3.5 h-3.5"></i> Saudia / Biman Direct Option
+                </span>
+                <span>Flight SV-805 · 40kg Baggage</span>
+              </div>
+              <div class="flex items-center justify-between">
+                <div>
+                  <div class="text-2xl font-bold text-white">DAC</div>
+                  <div class="text-xs text-slate-400">Dhaka · 19:45</div>
+                </div>
+                <div class="flex-1 px-4 flex flex-col items-center">
+                  <span class="text-[11px] text-goldLight mb-1">6h 45m Non-Stop</span>
+                  <div class="w-full h-[1px] bg-gradient-to-r from-transparent via-goldAccent to-transparent relative">
+                    <i data-lucide="plane" class="w-4 h-4 text-goldLight absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-emeraldDeep px-0.5"></i>
+                  </div>
+                </div>
+                <div class="text-right">
+                  <div class="text-2xl font-bold text-white">JED</div>
+                  <div class="text-xs text-slate-400">Jeddah · 23:30</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Included Steps -->
+            <div class="space-y-3 text-sm">
+              <div class="flex items-center gap-3 p-3 rounded-xl bg-white/5 border border-white/5">
+                <div class="w-8 h-8 rounded-lg bg-goldAccent/20 flex items-center justify-center text-goldLight shrink-0">
+                  <i data-lucide="train-front" class="w-4 h-4"></i>
+                </div>
+                <div>
+                  <div class="font-semibold text-white">Haramain High-Speed Rail / VIP Coach</div>
+                  <div class="text-xs text-slate-400">Jeddah → Makkah (45m) → Madinah (2h 15m)</div>
+                </div>
+              </div>
+
+              <div class="flex items-center gap-3 p-3 rounded-xl bg-white/5 border border-white/5">
+                <div class="w-8 h-8 rounded-lg bg-goldAccent/20 flex items-center justify-center text-goldLight shrink-0">
+                  <i data-lucide="building-2" class="w-4 h-4"></i>
+                </div>
+                <div>
+                  <div class="font-semibold text-white">Verified Haram-Proximity Stays</div>
+                  <div class="text-xs text-slate-400">0m–350m walking distance + daily breakfast</div>
+                </div>
+              </div>
+
+              <div class="flex items-center gap-3 p-3 rounded-xl bg-white/5 border border-white/5">
+                <div class="w-8 h-8 rounded-lg bg-goldAccent/20 flex items-center justify-center text-goldLight shrink-0">
+                  <i data-lucide="shield-check" class="w-4 h-4"></i>
+                </div>
+                <div>
+                  <div class="font-semibold text-white">Guided Spiritual Ziyarat & Visa</div>
+                  <div class="text-xs text-slate-400">Backed by Seerat Academy Foundation scholars</div>
+                </div>
+              </div>
+            </div>
+
+            <button onclick="openChatWithPrompt('Can you customize a Dhaka to Makkah & Madinah Umrah itinerary with direct flights?')" class="mt-6 w-full py-3.5 rounded-xl bg-white text-emeraldDeep font-bold text-sm hover:bg-goldLight transition flex items-center justify-center gap-2">
+              <i data-lucide="wand-2" class="w-4 h-4"></i>
+              Customize This Itinerary Now
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CORRIDORS / DESTINATIONS STRIP -->
+  <section id="corridors" class="py-16 bg-white border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <span class="text-xs font-bold uppercase tracking-widest text-emeraldRich">One Seamless Ecosystem</span>
+        <h2 class="font-display text-3xl sm:text-4xl font-bold text-emeraldDeep mt-2">Five Cities. Infinite Spiritual & Business Routes.</h2>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-5 gap-5">
+        <!-- City 1 -->
+        <div class="p-6 rounded-2xl bg-alabaster border border-slate-200 hover:border-goldAccent transition group">
+          <div class="flex items-center justify-between mb-3">
+            <span class="font-display font-bold text-lg text-emeraldDeep">Dhaka</span>
+            <span class="text-xs font-bold px-2 py-0.5 rounded bg-emeraldDeep text-goldLight">DAC</span>
+          </div>
+          <p class="text-xs text-slate-600 leading-relaxed">Origin hub with direct & one-stop departures, lounge access, and pre-departure orientation.</p>
+        </div>
+        <!-- City 2 -->
+        <div class="p-6 rounded-2xl bg-alabaster border border-slate-200 hover:border-goldAccent transition group">
+          <div class="flex items-center justify-between mb-3">
+            <span class="font-display font-bold text-lg text-emeraldDeep">Makkah</span>
+            <span class="text-xs font-bold px-2 py-0.5 rounded bg-emeraldDeep text-goldLight">QAS/JED</span>
+          </div>
+          <p class="text-xs text-slate-600 leading-relaxed">Clock Tower & Jabal Omar stays, scholar-led Umrah rituals, and private Taif/Mina Ziyarat.</p>
+        </div>
+        <!-- City 3 -->
+        <div class="p-6 rounded-2xl bg-alabaster border border-slate-200 hover:border-goldAccent transition group">
+          <div class="flex items-center justify-between mb-3">
+            <span class="font-display font-bold text-lg text-emeraldDeep">Madinah</span>
+            <span class="text-xs font-bold px-2 py-0.5 rounded bg-emeraldDeep text-goldLight">MED</span>
+          </div>
+          <p class="text-xs text-slate-600 leading-relaxed">Markazia hotels steps from Masjid an-Nabawi, Rawdah permit guidance & Uhud/Quba tours.</p>
+        </div>
+        <!-- City 4 -->
+        <div class="p-6 rounded-2xl bg-alabaster border border-slate-200 hover:border-goldAccent transition group">
+          <div class="flex items-center justify-between mb-3">
+            <span class="font-display font-bold text-lg text-emeraldDeep">Jeddah</span>
+            <span class="text-xs font-bold px-2 py-0.5 rounded bg-emeraldDeep text-goldLight">JED</span>
+          </div>
+          <p class="text-xs text-slate-600 leading-relaxed">Gateway arrival/departure, VIP airport meet & greet, Red Sea transit stopovers & Al-Balad tours.</p>
+        </div>
+        <!-- City 5 -->
+        <div class="p-6 rounded-2xl bg-alabaster border border-slate-200 hover:border-goldAccent transition group">
+          <div class="flex items-center justify-between mb-3">
+            <span class="font-display font-bold text-lg text-emeraldDeep">Riyadh</span>
+            <span class="text-xs font-bold px-2 py-0.5 rounded bg-emeraldDeep text-goldLight">RUH</span>
+          </div>
+          <p class="text-xs text-slate-600 leading-relaxed">Executive business + Umrah dual-purpose bundles, Diriyah heritage & domestic Saudi connections.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INTERACTIVE PACKAGES & FLIGHT DETAILS -->
+  <section id="packages" class="py-20 bg-alabaster">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
+        <div>
+          <span class="text-xs font-bold uppercase tracking-widest text-emeraldRich">Launch Lineup Preview</span>
+          <h2 class="font-display text-3xl sm:text-4xl font-bold text-emeraldDeep mt-2">Curated Packages & Flight Bundles</h2>
+          <p class="text-slate-600 mt-2 max-w-xl">Every bundle includes full flight breakdowns, baggage allowances, visa processing, and curated ground itineraries.</p>
+        </div>
+
+        <!-- Category Filter Tabs -->
+        <div class="flex flex-wrap gap-2" id="package-filters">
+          <button onclick="filterPackages('all')" class="filter-btn active px-4 py-2 rounded-lg text-sm font-semibold bg-emeraldDeep text-white transition">All Bundles</button>
+          <button onclick="filterPackages('umrah')" class="filter-btn px-4 py-2 rounded-lg text-sm font-semibold bg-white text-slate-700 border border-slate-200 hover:border-emeraldDeep transition">Umrah</button>
+          <button onclick="filterPackages('hajj')" class="filter-btn px-4 py-2 rounded-lg text-sm font-semibold bg-white text-slate-700 border border-slate-200 hover:border-emeraldDeep transition">Hajj</button>
+          <button onclick="filterPackages('riyadh')" class="filter-btn px-4 py-2 rounded-lg text-sm font-semibold bg-white text-slate-700 border border-slate-200 hover:border-emeraldDeep transition">Riyadh & Business</button>
+        </div>
+      </div>
+
+      <!-- Packages Grid -->
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8" id="packages-grid">
+        <!-- Populated by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY SEERAT + FOUNDATION CREDIBILITY -->
+  <section id="features" class="py-20 bg-emeraldDeep text-white relative overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="grid lg:grid-cols-12 gap-12 items-center">
+        <div class="lg:col-span-5 space-y-6">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-goldAccent/15 border border-goldAccent/30 text-goldLight text-xs font-semibold uppercase tracking-wider">
+            <i data-lucide="award" class="w-4 h-4"></i>
+            Trusted Heritage
+          </div>
+          <h2 class="font-display text-3xl sm:text-4xl font-bold leading-tight">
+            Operated Under <span class="text-goldLight">Seerat Academy Foundation</span>
+          </h2>
+          <p class="text-slate-300 leading-relaxed">
+            Seerat Travels isn't just another ticket portal. Built under the ethical governance of <strong class="text-white">Seerat Academy Foundation</strong>, we combine modern travel technology with authentic Islamic guidance—ensuring zero hidden charges, verified accommodations, and spiritually enriching journeys.
+          </p>
+          <div class="pt-2">
+            <a href="http://seeratfoundation.com" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-white/10 hover:bg-white/15 border border-goldAccent/40 text-goldLight font-semibold text-sm transition">
+              Visit seeratfoundation.com
+              <i data-lucide="external-link" class="w-4 h-4"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="lg:col-span-7 grid sm:grid-cols-2 gap-5">
+          <div class="glass-card p-6 rounded-2xl">
+            <i data-lucide="plane" class="w-8 h-8 text-goldLight mb-4"></i>
+            <h3 class="font-bold text-lg mb-2">Full Flight Transparency</h3>
+            <p class="text-sm text-slate-300">Compare direct flights (Saudia, Biman) vs. budget-smart transits (Flynas, Gulf Air, Emirates) with exact layover & baggage details upfront.</p>
+          </div>
+          <div class="glass-card p-6 rounded-2xl">
+            <i data-lucide="layers" class="w-8 h-8 text-goldLight mb-4"></i>
+            <h3 class="font-bold text-lg mb-2">Dynamic Custom Bundles</h3>
+            <p class="text-sm text-slate-300">Flying Dhaka → Riyadh for business, then Riyadh → Makkah for Umrah? Build multi-city itineraries in minutes.</p>
+          </div>
+          <div class="glass-card p-6 rounded-2xl">
+            <i data-lucide="book-open-check" class="w-8 h-8 text-goldLight mb-4"></i>
+            <h3 class="font-bold text-lg mb-2">Scholar-Led Guidance</h3>
+            <p class="text-sm text-slate-300">Access pre-departure workshops, authentic Masnoon Duas, and on-ground Muallim support curated by Seerat Academy.</p>
+          </div>
+          <div class="glass-card p-6 rounded-2xl">
+            <i data-lucide="headphones" class="w-8 h-8 text-goldLight mb-4"></i>
+            <h3 class="font-bold text-lg mb-2">Real-Time AI & Human Desk</h3>
+            <p class="text-sm text-slate-300">Instant answers on visa rules, flight changes, and group pricing right from our integrated concierge chat.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WAITLIST / HYPE CAPTURE SECTION -->
+  <section id="waitlist" class="py-20 bg-alabaster">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="bg-white rounded-3xl p-8 sm:p-12 shadow-xl border border-slate-200 text-center relative overflow-hidden">
+        <div class="absolute top-0 inset-x-0 h-2 bg-gradient-to-r from-emeraldDeep via-goldAccent to-emeraldDeep"></div>
+        
+        <span class="inline-block px-3 py-1 rounded-full bg-amber-100 text-amber-800 text-xs font-bold uppercase tracking-wider mb-4">
+          Founding Travelers Club
+        </span>
+        <h2 class="font-display text-3xl sm:text-4xl font-bold text-emeraldDeep">Get Early Access & Launch Discounts</h2>
+        <p class="text-slate-600 mt-3 max-w-xl mx-auto">
+          Join our priority waitlist for the Seerat Travels app launch. Early members receive priority Hajj 2027 registration slots and up to ৳15,000 off group Umrah packages.
+        </p>
+
+        <form id="waitlist-form" class="mt-8 max-w-lg mx-auto space-y-4 text-left">
+          <div class="grid sm:grid-cols-2 gap-4">
+            <div>
+              <label class="block text-xs font-semibold text-slate-700 mb-1">Full Name</label>
+              <input type="text" id="wl-name" required placeholder="e.g. Tariqul Islam" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-emeraldRich text-sm" />
+            </div>
+            <div>
+              <label class="block text-xs font-semibold text-slate-700 mb-1">WhatsApp / Phone</label>
+              <input type="tel" id="wl-phone" required placeholder="+880 1XXX-XXXXXX" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-emeraldRich text-sm" />
+            </div>
+          </div>
+          <div class="grid sm:grid-cols-2 gap-4">
+            <div>
+              <label class="block text-xs font-semibold text-slate-700 mb-1">Email Address</label>
+              <input type="email" id="wl-email" required placeholder="you@example.com" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-emeraldRich text-sm" />
+            </div>
+            <div>
+              <label class="block text-xs font-semibold text-slate-700 mb-1">Primary Interest</label>
+              <select id="wl-interest" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-emeraldRich text-sm bg-white">
+                <option value="Umrah Package (Dhaka ⇄ Makkah/Madinah)">Umrah Package (DAC ⇄ MAK/MED)</option>
+                <option value="Hajj Pre-Registration">Hajj Pre-Registration</option>
+                <option value="Dhaka ⇄ Riyadh Business + Umrah">Dhaka ⇄ Riyadh + Umrah Bundle</option>
+                <option value="Flights & Visa Only">Flight & Saudi Visa Only</option>
+              </select>
+            </div>
+          </div>
+          <button type="submit" class="w-full py-4 rounded-xl bg-emeraldDeep text-goldLight font-bold text-base hover:bg-emeraldRich transition shadow-lg">
+            Claim Early Access Priority
+          </button>
+        </form>
+        <div id="waitlist-success" class="hidden mt-6 p-4 rounded-xl bg-emerald-50 border border-emerald-200 text-emerald-900 text-sm font-medium">
+          JazakAllahu Khayran! You're on the priority waitlist. Our concierge will notify you first upon launch.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-emeraldDeep text-slate-300 py-12 border-t border-white/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6">
+      <div>
+        <div class="font-display text-lg font-bold text-white">SEERAT TRAVELS</div>
+        <div class="text-xs text-slate-400 mt-1">An initiative under <a href="http://seeratfoundation.com" target="_blank" rel="noopener noreferrer" class="text-goldLight underline">Seerat Academy Foundation</a> · Dhaka, Bangladesh</div>
+      </div>
+      <div class="flex flex-wrap items-center gap-6 text-xs">
+        <a href="#corridors" class="hover:text-goldLight">Dhaka ↔ Makkah</a>
+        <a href="#corridors" class="hover:text-goldLight">Jeddah & Madinah</a>
+        <a href="#corridors" class="hover:text-goldLight">Riyadh Bundles</a>
+        <a href="http://seeratfoundation.com" target="_blank" rel="noopener noreferrer" class="hover:text-goldLight">seeratfoundation.com</a>
+      </div>
+      <div class="text-xs text-slate-500">
+        © <span id="year"></span> Seerat Travels. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========================================================= -->
+  <!-- PACKAGE DETAILS MODAL                                     -->
+  <!-- ========================================================= -->
+  <div id="package-modal" class="fixed inset-0 z-50 hidden items-center justify-center bg-black/70 backdrop-blur-sm p-4">
+    <div class="bg-white rounded-3xl max-w-2xl w-full max-h-[90vh] overflow-y-auto shadow-2xl p-6 sm:p-8 relative">
+      <button onclick="closePackageModal()" class="absolute top-5 right-5 w-9 h-9 rounded-full bg-slate-100 hover:bg-slate-200 flex items-center justify-center text-slate-600">
+        <i data-lucide="x" class="w-5 h-5"></i>
+      </button>
+      <div id="modal-content"></div>
+    </div>
+  </div>
+
+  <!-- ========================================================= -->
+  <!-- N8N-READY REAL-TIME CHAT CONCIERGE WIDGET                 -->
+  <!-- ========================================================= -->
+  
+  <!-- Floating Launcher Button -->
+  <button id="chat-launcher" onclick="toggleChat()" class="fixed bottom-6 right-6 z-50 flex items-center gap-3 px-5 py-3.5 rounded-full bg-emeraldDeep text-white shadow-2xl shadow-emerald-950/50 border border-goldAccent/50 hover:scale-105 transition group">
+    <span class="relative flex h-3 w-3">
+      <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-goldLight opacity-75"></span>
+      <span class="relative inline-flex rounded-full h-3 w-3 bg-goldAccent"></span>
+    </span>
+    <span class="font-semibold text-sm">Seerat AI Concierge</span>
+    <i data-lucide="message-circle" class="w-5 h-5 text-goldLight"></i>
+  </button>
+
+  <!-- Chat Window -->
+  <div id="chat-window" class="fixed bottom-24 right-4 sm:right-6 z-50 w-[calc(100vw-2rem)] sm:w-[400px] h-[560px] max-h-[80vh] bg-white rounded-3xl shadow-2xl border border-slate-200 flex flex-col overflow-hidden hidden transition-all">
+    
+    <!-- Chat Header -->
+    <div class="bg-emeraldDeep text-white p-4 flex items-center justify-between border-b border-goldAccent/20">
+      <div class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-full bg-gradient-to-br from-goldLight to-goldAccent flex items-center justify-center text-emeraldDeep font-bold">
+          <i data-lucide="bot" class="w-5 h-5"></i>
+        </div>
+        <div>
+          <h4 class="font-bold text-sm leading-tight">Seerat Travel Concierge</h4>
+          <div class="flex items-center gap-1.5 text-[11px] text-emerald-300 mt-0.5">
+            <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+            <span id="connection-status-label">Demo Mode (Ready for n8n)</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex items-center gap-1">
+        <!-- Settings button to test n8n webhook directly in UI -->
+        <button onclick="toggleWebhookSettings()" title="Configure n8n Webhook URL" class="p-2 rounded-lg hover:bg-white/10 text-slate-300 hover:text-goldLight transition">
+          <i data-lucide="settings" class="w-4 h-4"></i>
+        </button>
+        <button onclick="resetChatSession()" title="New Chat Session" class="p-2 rounded-lg hover:bg-white/10 text-slate-300 hover:text-white transition">
+          <i data-lucide="rotate-ccw" class="w-4 h-4"></i>
+        </button>
+        <button onclick="toggleChat(false)" class="p-2 rounded-lg hover:bg-white/10 text-slate-300 hover:text-white transition">
+          <i data-lucide="x" class="w-4 h-4"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Collapsible n8n Webhook Config Panel -->
+    <div id="n8n-config-panel" class="hidden bg-amber-50 border-b border-amber-200 p-3 text-xs space-y-2">
+      <div class="font-bold text-amber-900 flex items-center justify-between">
+        <span>n8n Webhook Connection</span>
+        <button onclick="toggleWebhookSettings()" class="text-amber-700 underline">Close</button>
+      </div>
+      <input type="url" id="webhook-url-input" placeholder="https://your-n8n-domain.com/webhook/seerat-chat" class="w-full px-2.5 py-1.5 rounded border border-amber-300 bg-white text-slate-800 focus:outline-none" />
+      <div class="flex gap-2">
+        <button onclick="saveWebhookUrl()" class="flex-1 py-1.5 rounded bg-emeraldDeep text-white font-semibold hover:bg-emeraldRich">Save & Connect</button>
+        <button onclick="clearWebhookUrl()" class="px-3 py-1.5 rounded border border-amber-300 text-amber-900 hover:bg-amber-100">Use Demo</button>
+      </div>
+      <p class="text-[11px] text-amber-800">Payload sent: <code>{ sessionId, message, timestamp, source }</code></p>
+    </div>
+
+    <!-- Messages Area -->
+    <div id="chat-messages" class="flex-1 overflow-y-auto p-4 space-y-4 bg-alabaster chat-scroll">
+      <!-- Initial Greeting injected via JS -->
+    </div>
+
+    <!-- Quick Action Prompts -->
+    <div id="quick-prompts" class="px-3 py-2 bg-white border-t border-slate-100 flex gap-2 overflow-x-auto no-scrollbar">
+      <button onclick="sendQuickMessage('What Umrah packages do you have from Dhaka?')" class="shrink-0 text-xs px-3 py-1.5 rounded-full bg-emeraldDeep/5 hover:bg-emeraldDeep/10 text-emeraldDeep font-medium border border-emeraldDeep/15 transition">
+        Umrah from Dhaka
+      </button>
+      <button onclick="sendQuickMessage('Show Dhaka to Riyadh + Umrah flight bundles')" class="shrink-0 text-xs px-3 py-1.5 rounded-full bg-emeraldDeep/5 hover:bg-emeraldDeep/10 text-emeraldDeep font-medium border border-emeraldDeep/15 transition">
+        Dhaka → Riyadh + Umrah
+      </button>
+      <button onclick="sendQuickMessage('Hajj 2027 pre-registration details')" class="shrink-0 text-xs px-3 py-1.5 rounded-full bg-emeraldDeep/5 hover:bg-emeraldDeep/10 text-emeraldDeep font-medium border border-emeraldDeep/15 transition">
+        Hajj 2027 Info
+      </button>
+    </div>
+
+    <!-- Chat Input Form -->
+    <form id="chat-form" class="p-3 bg-white border-t border-slate-200 flex items-center gap-2">
+      <input 
+        type="text" 
+        id="chat-input" 
+        placeholder="Ask about flights, Umrah, visas..." 
+        autocomplete="off"
+        class="flex-1 px-4 py-2.5 rounded-xl bg-slate-100 focus:bg-white border border-transparent focus:border-emeraldRich focus:outline-none text-sm"
+      />
+      <button type="submit" class="w-10 h-10 rounded-xl bg-emeraldDeep text-goldLight flex items-center justify-center hover:bg-emeraldRich transition shrink-0">
+        <i data-lucide="send" class="w-4 h-4"></i>
+      </button>
+    </form>
+  </div>
+
+  <!-- ========================================================= -->
+  <!-- JAVASCRIPT: PACKAGES + N8N CHAT INTEGRATION               -->
+  <!-- ========================================================= -->
+  <script>
+    // Initialize Icons & Year
+    lucide.createIcons();
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // =========================================================
+    // 1. N8N CONFIGURATION (Plug your production URL here)
+    // =========================================================
+    const DEFAULT_N8N_WEBHOOK_URL = ""; // e.g. "https://n8n.seeratfoundation.com/webhook/seerat-travels-chat"
+
+    function getWebhookUrl() {
+      return localStorage.getItem('seerat_n8n_webhook') || DEFAULT_N8N_WEBHOOK_URL;
+    }
+
+    function getSessionId() {
+      let sid = localStorage.getItem('seerat_chat_session_id');
+      if (!sid) {
+        sid = 'seerat_' + Date.now() + '_' + Math.random().toString(36).substring(2, 9);
+        localStorage.setItem('seerat_chat_session_id', sid);
+      }
+      return sid;
+    }
+
+    // =========================================================
+    // 2. SAMPLE PACKAGES DATA (With Detailed Flight Info)
+    // =========================================================
+    const packagesData = [
+      {
+        id: 'umrah-royal',
+        category: 'umrah',
+        badge: 'Most Popular',
+        title: 'Royal Haram-View Umrah',
+        route: 'Dhaka (DAC) ⇄ Jeddah (JED) → Makkah → Madinah',
+        duration: '14 Days / 13 Nights',
+        price: 'BDT 1,85,000',
+        airline: 'Saudia / Biman Direct',
+        flightNo: 'SV-805 / BG-335',
+        flightDetails: 'Non-stop DAC–JED (6h 45m), 2x 23kg Checked + 7kg Cabin, In-flight Zamzam allowance.',
+        hotels: 'Makkah: Swissotel / Clock Tower (0m) · Madinah: Anwar Al Madinah (50m)',
+        highlights: ['Haramain High-Speed Train Jeddah–Makkah–Madinah', 'Umrah E-Visa & Health Insurance', 'Guided Ziyarat with Seerat Academy Scholar']
+      },
+      {
+        id: 'umrah-smart',
+        category: 'umrah',
+        badge: 'Value Bundle',
+        title: 'Al-Noor Economy Umrah',
+        route: 'Dhaka (DAC) ⇄ Madinah (MED) / Jeddah (JED)',
+        duration: '10 Days / 9 Nights',
+        price: 'BDT 1,32,000',
+        airline: 'Gulf Air / Flynas / Air Arabia',
+        flightNo: 'GF-251 / XY-318',
+        flightDetails: '1-Stop via Bahrain or Riyadh (Total ~9h 30m), 30kg Baggage included, flexible return.',
+        hotels: 'Makkah: Emaar Grand (400m shuttle) · Madinah: Markazia 3-Star (250m)',
+        highlights: ['Full Visa & Airport Transfers', 'Daily Buffet Breakfast', 'Pre-departure Umrah Training Workshop']
+      },
+      {
+        id: 'riyadh-dual',
+        category: 'riyadh',
+        badge: 'Executive Dual-City',
+        title: 'Riyadh Business + Umrah Combo',
+        route: 'Dhaka (DAC) → Riyadh (RUH) → Makkah → Jeddah (JED) → Dhaka',
+        duration: '7 Days / 6 Nights',
+        price: 'BDT 1,68,000',
+        airline: 'Saudia Multi-City',
+        flightNo: 'SV-809 (DAC-RUH) + SV-1042 (RUH-JED)',
+        flightDetails: 'Open-jaw ticket: Land in Riyadh, domestic hop to Jeddah, fly home direct from Jeddah.',
+        hotels: 'Riyadh: Olaya Executive 4-Star · Makkah: Jabal Omar Hyatt Regency',
+        highlights: ['Ideal for Corporate Travelers & Expat Families', 'Fast-track Riyadh Airport Assistance', 'Customizable Meeting & Ziyarat Schedule']
+      },
+      {
+        id: 'hajj-2027',
+        category: 'hajj',
+        badge: 'Priority Pre-Booking',
+        title: 'Seerat Guided Hajj Package',
+        route: 'Dhaka (DAC) ⇄ Jeddah / Madinah (Dedicated Hajj Flight)',
+        duration: '22–38 Days (Flexible Tiers)',
+        price: 'Starting BDT 5,95,000',
+        airline: 'Biman Bangladesh / Saudia Hajj Charter',
+        flightNo: 'BG-3001 / SV-3812',
+        flightDetails: 'Direct Hajj terminal arrival, dedicated baggage handling, Zamzam 5L provided at DAC.',
+        hotels: 'Makkah: Aziziyah + Shifting Haram Hotel · Mina: Upgraded Maktab Zone',
+        highlights: ['Accompanied by Senior Seerat Academy Scholars', '24/7 Medical & Logistics Volunteer Team', 'Mina-Arafat-Muzdalifah AC Coach Transfers']
+      },
+      {
+        id: 'jeddah-stopover',
+        category: 'riyadh',
+        badge: 'Custom Itinerary',
+        title: 'Saudi Explorer: Jeddah, Madinah & Riyadh',
+        route: 'DAC → RUH → MED → JED → DAC',
+        duration: '12 Days / 11 Nights',
+        price: 'BDT 1,95,000',
+        airline: 'Saudia Domestic + International Pass',
+        flightNo: 'Multi-Leg Saudi Domestic Included',
+        flightDetails: 'Includes all 3 domestic Saudi flights + international legs from Dhaka.',
+        hotels: '4-Star Boutique & Haram Proximity Stays across all 3 cities',
+        highlights: ['Al-Ula / Diriyah Heritage Add-on Option', 'Umrah Performance Included', 'Private Family SUV Ground Transport']
+      },
+      {
+        id: 'family-bespoke',
+        category: 'umrah',
+        badge: 'Tailor-Made',
+        title: 'Private Family & Elderly Umrah',
+        route: 'Dhaka (DAC) ⇄ Jeddah (JED) / Madinah (MED)',
+        duration: 'Custom (7 to 21 Days)',
+        price: 'Custom Quote',
+        airline: 'Your Choice (Emirates / Qatar / Saudia)',
+        flightNo: 'Flexible Dates & Cabin Class',
+        flightDetails: 'Business or Economy class, wheelchair assistance pre-booked across all airports.',
+        hotels: 'Zero-stair Haram-front suites with interconnected family rooms',
+        highlights: ['Private GMC Yukon / Staria Transfers', 'Dedicated Female & Male Guide Support', 'Custom Meal & Medical Preferences']
+      }
+    ];
+
+    function renderPackages(filter = 'all') {
+      const grid = document.getElementById('packages-grid');
+      const filtered = filter === 'all' ? packagesData : packagesData.filter(p => p.category === filter);
+
+      grid.innerHTML = filtered.map(pkg => `
+        <div class="bg-white rounded-3xl border border-slate-200 shadow-sm hover:shadow-xl hover:border-goldAccent/60 transition flex flex-col overflow-hidden group">
+          <div class="p-6 pb-4 bg-gradient-to-br from-emeraldDeep to-emeraldRich text-white relative">
+            <span class="inline-block px-3 py-1 rounded-full bg-goldAccent/20 border border-goldAccent/40 text-goldLight text-[11px] font-bold uppercase tracking-wider mb-3">
+              ${pkg.badge}
+            </span>
+            <h3 class="font-display text-xl font-bold leading-snug">${pkg.title}</h3>
+            <p class="text-xs text-slate-300 mt-1 flex items-center gap-1.5">
+              <i data-lucide="map-pin" class="w-3.5 h-3.5 text-goldLight shrink-0"></i>
+              ${pkg.route}
+            </p>
+          </div>
+
+          <div class="p-6 flex-1 flex flex-col justify-between space-y-5">
+            <div class="space-y-3 text-sm">
+              <!-- Flight Pill -->
+              <div class="p-3 rounded-xl bg-alabaster border border-slate-200">
+                <div class="flex items-center justify-between text-xs font-bold text-emeraldDeep mb-1">
+                  <span class="flex items-center gap-1.5"><i data-lucide="plane" class="w-3.5 h-3.5 text-amber-600"></i> ${pkg.airline}</span>
+                  <span class="text-slate-500">${pkg.duration}</span>
+                </div>
+                <div class="text-xs text-slate-600">${pkg.flightDetails}</div>
+              </div>
+
+              <!-- Hotel Info -->
+              <div class="text-xs text-slate-600 flex items-start gap-2">
+                <i data-lucide="building" class="w-4 h-4 text-emeraldRich shrink-0 mt-0.5"></i>
+                <span><strong class="text-slate-800">Stays:</strong> ${pkg.hotels}</span>
+              </div>
+
+              <!-- Highlights -->
+              <ul class="space-y-1.5 pt-1">
+                ${pkg.highlights.map(h => `
+                  <li class="text-xs text-slate-600 flex items-center gap-2">
+                    <i data-lucide="check-circle-2" class="w-3.5 h-3.5 text-emerald-600 shrink-0"></i>
+                    ${h}
+                  </li>
+                `).join('')}
+              </ul>
+            </div>
+
+            <div class="pt-4 border-t border-slate-100 flex items-center justify-between gap-3">
+              <div>
+                <div class="text-[11px] text-slate-400 uppercase font-semibold">Estimated Bundle</div>
+                <div class="text-lg font-bold text-emeraldDeep">${pkg.price}</div>
+              </div>
+              <div class="flex gap-2">
+                <button onclick="openPackageModal('${pkg.id}')" class="px-3.5 py-2.5 rounded-xl border border-slate-200 hover:border-emeraldDeep text-xs font-bold text-slate-700 transition">
+                  Flight Specs
+                </button>
+                <button onclick="openChatWithPrompt('I am interested in the ${pkg.title} (${pkg.route}). Can you share available dates and exact flight pricing?')" class="px-4 py-2.5 rounded-xl bg-emeraldDeep text-goldLight hover:bg-emeraldRich text-xs font-bold transition">
+                  Book / Ask
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      `).join('');
+
+      lucide.createIcons();
+    }
+
+    function filterPackages(category) {
+      document.querySelectorAll('.filter-btn').forEach(btn => {
+        btn.classList.remove('bg-emeraldDeep', 'text-white');
+        btn.classList.add('bg-white', 'text-slate-700', 'border', 'border-slate-200');
+      });
+      event.target.classList.add('bg-emeraldDeep', 'text-white');
+      event.target.classList.remove('bg-white', 'text-slate-700', 'border', 'border-slate-200');
+      renderPackages(category);
+    }
+
+    // Modal Functions
+    function openPackageModal(pkgId) {
+      const pkg = packagesData.find(p => p.id === pkgId);
+      if (!pkg) return;
+
+      document.getElementById('modal-content').innerHTML = `
+        <span class="inline-block px-3 py-1 rounded-full bg-emeraldDeep text-goldLight text-xs font-bold uppercase mb-3">${pkg.badge}</span>
+        <h3 class="font-display text-2xl font-bold text-emeraldDeep">${pkg.title}</h3>
+        <p class="text-sm text-slate-600 mt-1">${pkg.route} · <strong>${pkg.duration}</strong></p>
+
+        <div class="mt-6 p-4 rounded-2xl bg-alabaster border border-slate-200 space-y-2">
+          <div class="text-xs font-bold uppercase tracking-wider text-emeraldRich">Flight & Carrier Details</div>
+          <div class="text-sm font-semibold text-slate-800">${pkg.airline} (${pkg.flightNo})</div>
+          <p class="text-xs text-slate-600">${pkg.flightDetails}</p>
+        </div>
+
+        <div class="mt-4 p-4 rounded-2xl bg-alabaster border border-slate-200 space-y-2">
+          <div class="text-xs font-bold uppercase tracking-wider text-emeraldRich">Accommodation Details</div>
+          <p class="text-sm text-slate-700">${pkg.hotels}</p>
+        </div>
+
+        <div class="mt-4 space-y-2">
+          <div class="text-xs font-bold uppercase tracking-wider text-emeraldRich">Included in Bundle</div>
+          ${pkg.highlights.map(h => `<div class="text-sm text-slate-700 flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-600"></i>${h}</div>`).join('')}
+        </div>
+
+        <div class="mt-6 pt-5 border-t border-slate-200 flex items-center justify-between">
+          <div>
+            <span class="text-xs text-slate-500 block">Indicative Package Price</span>
+            <span class="text-2xl font-bold text-emeraldDeep">${pkg.price}</span>
+          </div>
+          <button onclick="closePackageModal(); openChatWithPrompt('Please help me book or customize the ${pkg.title} package.')" class="px-6 py-3 rounded-xl bg-emeraldDeep text-goldLight font-bold text-sm hover:bg-emeraldRich transition">
+            Customize via Live Chat →
+          </button>
+        </div>
+      `;
+      const modal = document.getElementById('package-modal');
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+      lucide.createIcons();
+    }
+
+    function closePackageModal() {
+      const modal = document.getElementById('package-modal');
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+    }
+
+    renderPackages('all');
+
+    // =========================================================
+    // 3. WAITLIST FORM HANDLER
+    // =========================================================
+    document.getElementById('waitlist-form').addEventListener('submit', async function(e) {
+      e.preventDefault();
+      const payload = {
+        type: 'waitlist_signup',
+        name: document.getElementById('wl-name').value,
+        phone: document.getElementById('wl-phone').value,
+        email: document.getElementById('wl-email').value,
+        interest: document.getElementById('wl-interest').value,
+        timestamp: new Date().toISOString()
+      };
+
+      // Optional: Forward waitlist signups to n8n if connected
+      const webhookUrl = getWebhookUrl();
+      if (webhookUrl) {
+        try {
+          await fetch(webhookUrl, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(payload)
+          });
+        } catch (err) {
+          console.warn('Waitlist webhook skipped/failed:', err);
+        }
+      }
+
+      this.reset();
+      document.getElementById('waitlist-success').classList.remove('hidden');
+    });
+
+    // =========================================================
+    // 4. N8N CHAT WIDGET ENGINE
+    // =========================================================
+    const chatWindow = document.getElementById('chat-window');
+    const chatMessages = document.getElementById('chat-messages');
+    const chatForm = document.getElementById('chat-form');
+    const chatInput = document.getElementById('chat-input');
+    const statusLabel = document.getElementById('connection-status-label');
+
+    function updateConnectionBadge() {
+      const url = getWebhookUrl();
+      if (url) {
+        statusLabel.textContent = 'Connected to n8n Live';
+        document.getElementById('webhook-url-input').value = url;
+      } else {
+        statusLabel.textContent = 'Demo Mode (Connect n8n via ⚙️)';
+      }
+    }
+
+    function toggleChat(forceState) {
+      const isHidden = chatWindow.classList.contains('hidden');
+      const shouldOpen = typeof forceState === 'boolean' ? forceState : isHidden;
+
+      if (shouldOpen) {
+        chatWindow.classList.remove('hidden');
+        chatInput.focus();
+      } else {
+        chatWindow.classList.add('hidden');
+      }
+    }
+
+    function toggleWebhookSettings() {
+      document.getElementById('n8n-config-panel').classList.toggle('hidden');
+    }
+
+    function saveWebhookUrl() {
+      const val = document.getElementById('webhook-url-input').value.trim();
+      if (val) {
+        localStorage.setItem('seerat_n8n_webhook', val);
+        updateConnectionBadge();
+        toggleWebhookSettings();
+        appendBotMessage(`✅ Live n8n webhook configured! Messages will now route to your workflow in real time.`);
+      }
+    }
+
+    function clearWebhookUrl() {
+      localStorage.removeItem('seerat_n8n_webhook');
+      document.getElementById('webhook-url-input').value = '';
+      updateConnectionBadge();
+      toggleWebhookSettings();
+      appendBotMessage(`Switched back to built-in Demo Mode.`);
+    }
+
+    function openChatWithPrompt(promptText) {
+      toggleChat(true);
+      sendMessage(promptText);
+    }
+
+    function sendQuickMessage(text) {
+      sendMessage(text);
+    }
+
+    function resetChatSession() {
+      localStorage.removeItem('seerat_chat_session_id');
+      chatMessages.innerHTML = '';
+      initChatGreeting();
+    }
+
+    function appendUserMessage(text) {
+      const div = document.createElement('div');
+      div.className = 'flex justify-end';
+      div.innerHTML = `
+        <div class="max-w-[82%] bg-emeraldDeep text-white px-4 py-2.5 rounded-2xl rounded-tr-sm text-sm shadow-sm leading-relaxed">
+          ${escapeHTML(text)}
+        </div>
+      `;
+      chatMessages.appendChild(div);
+      scrollToBottom();
+    }
+
+    function appendBotMessage(text) {
+      const div = document.createElement('div');
+      div.className = 'flex items-start gap-2.5';
+      div.innerHTML = `
+        <div class="w-7 h-7 rounded-full bg-goldAccent/20 border border-goldAccent/40 flex items-center justify-center text-emeraldDeep shrink-0 mt-0.5">
+          <i data-lucide="sparkles" class="w-3.5 h-3.5"></i>
+        </div>
+        <div class="max-w-[82%] bg-white border border-slate-200 text-slate-700 px-4 py-2.5 rounded-2xl rounded-tl-sm text-sm shadow-sm leading-relaxed whitespace-pre-line">
+          ${formatSimpleMarkdown(escapeHTML(text))}
+        </div>
+      `;
+      chatMessages.appendChild(div);
+      lucide.createIcons();
+      scrollToBottom();
+    }
+
+    function showTypingIndicator() {
+      const id = 'typing-' + Date.now();
+      const div = document.createElement('div');
+      div.id = id;
+      div.className = 'flex items-start gap-2.5';
+      div.innerHTML = `
+        <div class="w-7 h-7 rounded-full bg-goldAccent/20 flex items-center justify-center text-emeraldDeep shrink-0">
+          <i data-lucide="sparkles" class="w-3.5 h-3.5"></i>
+        </div>
+        <div class="bg-white border border-slate-200 px-4 py-3 rounded-2xl rounded-tl-sm flex items-center gap-1.5">
+          <span class="w-2 h-2 bg-slate-400 rounded-full typing-dot"></span>
+          <span class="w-2 h-2 bg-slate-400 rounded-full typing-dot"></span>
+          <span class="w-2 h-2 bg-slate-400 rounded-full typing-dot"></span>
+        </div>
+      `;
+      chatMessages.appendChild(div);
+      lucide.createIcons();
+      scrollToBottom();
+      return id;
+    }
+
+    function removeTypingIndicator(id) {
+      const el = document.getElementById(id);
+      if (el) el.remove();
+    }
+
+    function scrollToBottom() {
+      chatMessages.scrollTop = chatMessages.scrollHeight;
+    }
+
+    async function sendMessage(text) {
+      const cleanText = text.trim();
+      if (!cleanText) return;
+
+      appendUserMessage(cleanText);
+      chatInput.value = '';
+
+      const typingId = showTypingIndicator();
+      const webhookUrl = getWebhookUrl();
+
+      // If user configured an n8n Webhook URL, send real POST request
+      if (webhookUrl) {
+        try {
+          const response = await fetch(webhookUrl, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+              sessionId: getSessionId(),
+              message: cleanText,
+              timestamp: new Date().toISOString(),
+              source: 'seerat-travels-landing',
+              metadata: {
+                brand: 'Seerat Travels',
+                foundation: 'Seerat Academy Foundation',
+                website: 'http://seeratfoundation.com'
+              }
+            })
+          });
+
+          if (!response.ok) throw new Error('Webhook returned status ' + response.status);
+          
+          const data = await response.json();
+          removeTypingIndicator(typingId);
+
+          // Handle common n8n response structures gracefully
+          let replyText = '';
+          if (Array.isArray(data) && data.length > 0) {
+            replyText = data[0].reply || data[0].output || data[0].text || data[0].message || JSON.stringify(data[0]);
+          } else {
+            replyText = data.reply || data.output || data.text || data.message || 'Thank you! Our team received your message.';
+          }
+
+          appendBotMessage(replyText);
+
+        } catch (error) {
+          removeTypingIndicator(typingId);
+          appendBotMessage(`⚠️ Could not reach your n8n webhook (${error.message}). Make sure CORS is enabled on your n8n Webhook node, or switch to Demo Mode via the ⚙️ icon.`);
+        }
+      } else {
+        // Smart Demo Simulator (while n8n is not yet connected)
+        setTimeout(() => {
+          removeTypingIndicator(typingId);
+          appendBotMessage(generateDemoReply(cleanText));
+        }, 700);
+      }
+    }
+
+    function generateDemoReply(query) {
+      const q = query.toLowerCase();
+      if (q.includes('umrah')) {
+        return `Assalamu Alaikum! For **Umrah from Dhaka**, we currently feature two flagship launch bundles:\n\n• **Al-Noor Economy (10 Days):** BDT 1,32,000 (Gulf Air / Flynas, 3-Star Markazia)\n• **Royal Haram-View (14 Days):** BDT 1,85,000 (Direct Saudia/Biman, Clock Tower / 0m Haram)\n\nHow many travelers and which month are you planning for?`;
+      }
+      if (q.includes('riyadh')) {
+        return `Our **Dhaka → Riyadh + Umrah Dual Bundle** is designed for executives and families! We book an open-jaw Saudia itinerary (DAC → RUH, domestic RUH → JED, and direct JED → DAC) starting around BDT 1,68,000 including hotels and e-visa.\n\nWould you like a custom quote with specific travel dates?`;
+      }
+      if (q.includes('hajj')) {
+        return `**Hajj 2027 Pre-Registration** is now open under Seerat Academy Foundation! Early registrants receive priority Maktab allocations, scholar-led orientation, and direct Dhaka–Jeddah/Madinah flights.\n\nShare your phone/WhatsApp or fill out the waitlist form so our Hajj coordinator can reach out.`;
+      }
+      return `Assalamu Alaikum! Welcome to **Seerat Travels** (by Seerat Academy Foundation).\n\nI can help you plan:\n1. **Umrah & Hajj Packages** from Dhaka\n2. **Flight + Hotel Bundles** (Makkah, Madinah, Jeddah, Riyadh)\n3. **Visa & Custom Family Itineraries**\n\n*(Tip: Click the ⚙️ icon in the header to plug in your live n8n Webhook URL anytime!)*`;
+    }
+
+    function initChatGreeting() {
+      appendBotMessage(`Assalamu Alaikum! Welcome to **Seerat Travels**.\n\nLooking for **Umrah, Hajj, or Dhaka ⇄ Saudi Arabia (Makkah, Jeddah, Madinah, Riyadh)** flight bundles? Ask me anything!`);
+    }
+
+    chatForm.addEventListener('submit', function(e) {
+      e.preventDefault();
+      sendMessage(chatInput.value);
+    });
+
+    // Security & formatting helpers
+    function escapeHTML(str) {
+      return str.replace(/[&<>'"]/g, tag => ({
+        '&': '&amp;', '<': '&lt;', '>': '&gt;', "'": '&#39;', '"': '&quot;'
+      }[tag]));
+    }
+
+    function formatSimpleMarkdown(str) {
+      return str.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
+    }
+
+    updateConnectionBadge();
+    initChatGreeting();
+  </script>
+</body>
+</html>
